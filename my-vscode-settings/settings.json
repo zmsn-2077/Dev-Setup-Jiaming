@@ -1,7 +1,7 @@
 {
     //! Editor settings */
     //* Editor */
-    "editor.fontSize": 13,
+    "editor.fontSize": 14.5,
     "editor.fontFamily": "Menlo, Monaco, Consolas, 'Courier New', 'Microsoft YaHei Mono', monospace, 'DejaVuSansMono Nerd Font Mono', 'DejaVuSansMono NF'",
     "editor.fontWeight": 600,
     "editor.tabSize": 4,
@@ -86,7 +86,6 @@
     "workbench.localHistory.enabled": true,
     "workbench.localHistory.maxFileSize": 1024,
     "workbench.localHistory.mergeWindow": 60,
-
     //* Window */
     "window.zoomLevel": -0.25,
     "window.closeWhenEmpty": false,
@@ -95,12 +94,10 @@
     "window.openFoldersInNewWindow": "default",
     "window.titleBarStyle": "custom",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
-
     //* Breadcrumb Navigation */
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
     "breadcrumbs.symbolPath": "on",
-
     //* Files */
     "files.autoGuessEncoding": false,
     "files.encoding": "utf8",
@@ -126,12 +123,10 @@
         "**/__pycache__": true
     },
     "files.maxMemoryForLargeFilesMB": 10240,
-
     //* File Explorer */
     "explorer.autoReveal": true,
     "explorer.confirmDragAndDrop": true,
     "explorer.enableDragAndDrop": true,
-
     //* Search */
     "search.searchOnType": true,
     "search.showLineNumbers": true,
@@ -147,17 +142,14 @@
         "**/cmake-build*": true,
         "**/.history": true
     },
-
     //* Outline */
     "outline.icons": true,
     "outline.problems.badges": true,
     "outline.problems.colors": true,
     "outline.problems.enabled": true,
-
     //* Debug */
     "debug.inlineValues": "auto",
     "debug.openExplorerOnEnd": true,
-
     //* Integrated Terminal */
     "terminal.explorerKind": "integrated",
     "terminal.integrated.fontSize": 14,
@@ -174,20 +166,16 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
-
     //* External Terminal */
     "terminal.external.linuxExec": "x-terminal-emulator",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-
     //* Extensions */
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": true,
     "extensions.closeExtensionDetailsOnViewChange": true,
-
     //* Update */
     "update.mode": "default",
-
     //! Default Configuration Overrides */
     "[c]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
@@ -247,15 +235,12 @@
     "[shellscript]": {
         "editor.insertSpaces": false
     },
-
     //! Extension settings */
     //* Azure Machine Learning */
     // "ai.homepage.openOnStartup": false,
-
     //* Better Comments */
     "better-comments.highlightPlainText": true,
     "better-comments.multilineComments": true,
-
     //* C/C++ */
     "C_Cpp.default.compilerPath": "gcc",
     "C_Cpp.default.cppStandard": "c++20",
@@ -271,7 +256,6 @@
     "C_Cpp.clang_format_style": "file",
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, AccessModifierOffset: -3, ColumnLimit: 100, BinPackArguments: false, BinPackParameters: false }",
     "C_Cpp.codeAnalysis.clangTidy.enabled": true,
-
     //* C/C++ Clang Command Adapter */
     "clang.executable": "clang",
     "clang.cflags": [
@@ -284,7 +268,6 @@
     "clang.completion.completeMacros": true,
     "clang.completion.enable": true,
     "clang.diagnostic.enable": true,
-
     //* Clangd */
     "clangd.arguments": [
         "--compile-commands-dir=${workspaceFolder}/.vscode",
@@ -292,7 +275,6 @@
         "--clang-tidy"
     ],
     "clangd.detectExtensionConflicts": false,
-
     //* Cmake Tools */
     "cmake.cmakePath": "cmake",
     "cmake.preferredGenerators": [
@@ -307,7 +289,6 @@
     "cmake.buildBeforeRun": true,
     "cmake.exportCompileCommandsFile": true,
     "cmake.copyCompileCommands": "${workspaceFolder}/.vscode/compile_commands.json",
-
     //* Code Runner */
     "code-runner.clearPreviousOutput": false,
     "code-runner.runInTerminal": true,
@@ -395,11 +376,9 @@
         ".sass": "sass --style expanded",
         ".cu": "cd $dirWithoutTrailingSlash && nvcc \"$fileName\" -o \"$fileNameWithoutExt\" && { ./\"$fileNameWithoutExt\"; rm \"$fileNameWithoutExt\" }"
     },
-
     //* Code Spell Checker */
     "cSpell.language": "en,en-US",
     "cSpell.showStatus": false,
-
     //* Git */
     "git.enabled": true,
     "git.path": "git",
@@ -409,7 +388,6 @@
     "git.detectSubmodules": true,
     "git.autofetch": true,
     "git.confirmSync": true,
-
     //* Git Graph */
     "git-graph.repository.commits.order": "date",
     "git-graph.repository.showUncommittedChanges": true,
@@ -418,11 +396,9 @@
     "git-graph.referenceLabels.combineLocalAndRemoteBranchLabels": true,
     "git-graph.commitDetailsView.fileView.type": "File Tree",
     "git-graph.commitDetailsView.fileView.fileTree.compactFolders": true,
-
     //* Git History */
     "gitHistory.hideCommitViewExplorer": false,
     "gitHistory.showEditorTitleMenuBarIcons": true,
-
     //* GitHub */
     "github.gitProtocol": "ssh",
     "github.codespaces.defaultExtensions": [
@@ -440,15 +416,12 @@
         "ms-python.python",
         "ms-python.vscode-pylance"
     ],
-
     //* GitHub Pull Requests and Issues */
     "githubPullRequests.pullBranch": "never",
-
     //* GitLens */
     "gitlens.defaultTimeFormat": "HH:mm",
     "gitlens.defaultDateFormat": "MMMM Do, YYYY HH:mm",
     "gitlens.defaultDateShortFormat": "MMMM D, YYYY",
-
     //* Go */
     "go.gopath": "/usr/local/opt/go",
     "go.goroot": "/usr/local/opt/go/libexec",
@@ -464,7 +437,6 @@
     "go.lintOnSave": "package",
     "go.installDependenciesWhenBuilding": true,
     "go.useLanguageServer": true,
-
     //* Java Extension Pack */
     "java.home": "/Library/Java/JavaVirtualMachines/Home",
     "java.autobuild.enabled": true,
@@ -482,13 +454,11 @@
     "java.format.comments.enabled": true,
     "java.format.settings.profile": "GoogleStyle",
     "java.format.settings.url": "https://github.com/google/styleguide/raw/gh-pages/eclipse-java-google-style.xml",
-
     //* Julia */
     "julia.executablePath": "julia",
     "julia.enableCrashReporter": false,
     "julia.enableTelemetry": false,
     "julia.usePlotPane": true,
-
     //* LaTeX Workshop */
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.intellisense.unimathsymbols.enabled": true,
@@ -772,7 +742,6 @@
         "_minted-*/**",
         "_minted-*/"
     ],
-
     //* LaTeX Utilities */
     "latex-utilities.countWord.format": "${words} Words (${wordsBody} in Body)",
     "latex-utilities.countWord.args": [
@@ -781,7 +750,6 @@
     ],
     "latex-utilities.formattedPaste.tableBooktabsStyle": true,
     "latex-utilities.formattedPaste.image.template": "\\includegraphics[width=\\linewidth]{${imageFilePath}}",
-
     //* Live Share */
     "liveshare.alwaysFollowHost": false,
     "liveshare.connectionMode": "auto",
@@ -800,7 +768,6 @@
     "liveshare.showVerboseNotifications": true,
     "liveshare.audio.joinCallBehavior": "prompt",
     "liveshare.audio.startCallOnShare": false,
-
     //* Local History */
     "local-history.enabled": 2,
     "local-history.absolute": false,
@@ -808,11 +775,9 @@
     "local-history.saveDelay": 120,
     "local-history.daysLimit": 14,
     "local-history.treeLocation": "localHistory",
-
     //* Makefile Tools */
     "makefile.configureOnEdit": false,
     "makefile.configureOnOpen": false,
-
     //* Markdown All in One */
     "markdown.extension.list.indentationSize": "inherit",
     "markdown.extension.preview.autoShowPreviewToSide": false,
@@ -825,22 +790,18 @@
             "## Table of Contents"
         ]
     },
-
     //* Matlab */
     "matlab.matlabpath": "/Applications/MATLAB_R2021b.app/bin/matlab",
     "matlab.mlintpath": "/Applications/MATLAB_R2021b.app/bin/maci64/mlint",
     "matlab.lintOnSave": true,
     "matlab.linterEncoding": "utf8",
-
     //* MySQL */
     "vscode-mysql.enableTelemetry": false,
-
     //* PlantUML */
     "plantuml.jar": "/usr/local/opt/plantuml/libexec/plantuml.jar",
     "plantuml.previewAutoUpdate": true,
     "plantuml.render": "PlantUMLServer",
     "plantuml.server": "https://www.plantuml.com/plantuml",
-
     //* PowerShell */
     "powershell.codeFolding.enable": true,
     "powershell.codeFolding.showLastLine": true,
@@ -863,7 +824,6 @@
     "powershell.codeFormatting.whitespaceInsideBrace": true,
     "powershell.enableProfileLoading": true,
     "powershell.scriptAnalysis.enable": true,
-
     //* Python */
     "python.analysis.autoImportCompletions": true,
     "python.analysis.autoSearchPaths": true,
@@ -920,7 +880,6 @@
         "--line-length=100"
     ],
     "ruff.organizeImports": false,
-
     //* Remote */
     "remote.extensionKind": {
         "coenraads.bracket-pair-colorizer-2": "ui",
@@ -942,11 +901,9 @@
         "ms-python.vscode-pylance",
         "ms-toolsai.jupyter"
     ],
-
     //* reStructuredText */
     "restructuredtext.languageServer.disabled": true,
     "esbonio.server.enabled": false,
-
     //* Shellcheck */
     "shellcheck.executablePath": "shellcheck",
     "shellcheck.enable": true,
@@ -956,10 +913,8 @@
         "--shell=bash",
         "--enable=all"
     ],
-
     //* Shell-format */
     "shellformat.flag": "-i 0 -ci",
-
     //* SQL Server (mssql) */
     "mssql.format.datatypeCasing": "lowercase",
     "mssql.format.keywordCasing": "lowercase",
@@ -978,10 +933,8 @@
             "password": ""
         }
     ],
-
     //* TabNine */
     "tabnine.experimentalAutoImports": true,
-
     //* Todo Tree */
     "todo-tree.general.tags": [
         "BUG",
@@ -993,7 +946,6 @@
         "[x]"
     ],
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-
     //* Visual Studio IntelliCode */
     "vsintellicode.features.python.deepLearning": "enabled",
     "vsintellicode.python.completionsEnabled": true,
