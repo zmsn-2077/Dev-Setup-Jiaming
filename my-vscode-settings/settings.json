@@ -285,7 +285,6 @@
     "cmake.exportCompileCommandsFile": true,
     "cmake.copyCompileCommands": "${workspaceFolder}/.vscode/compile_commands.json",
     //* Code Runner */
-    
     //* Code Spell Checker */
     "cSpell.language": "en,en-US",
     "cSpell.showStatus": false,
@@ -332,43 +331,6 @@
     "gitlens.defaultTimeFormat": "HH:mm",
     "gitlens.defaultDateFormat": "MMMM Do, YYYY HH:mm",
     "gitlens.defaultDateShortFormat": "MMMM D, YYYY",
-    //* Go */
-    "go.gopath": "/usr/local/opt/go",
-    "go.goroot": "/usr/local/opt/go/libexec",
-    "go.gotoSymbol.includeGoroot": true,
-    "go.useCodeSnippetsOnFunctionSuggest": true,
-    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
-    "go.autocompleteUnimportedPackages": true,
-    "go.buildOnSave": "package",
-    "go.gocodePackageLookupMode": "go",
-    "go.docsTool": "godoc",
-    "go.formatTool": "default",
-    "go.lintTool": "golint",
-    "go.lintOnSave": "package",
-    "go.installDependenciesWhenBuilding": true,
-    "go.useLanguageServer": true,
-    //* Java Extension Pack */
-    "java.home": "/Library/Java/JavaVirtualMachines/Home",
-    "java.autobuild.enabled": true,
-    "java.completion.enabled": true,
-    "java.completion.guessMethodArguments": true,
-    "java.completion.importOrder": [
-        "java",
-        "javax",
-        "com",
-        "org"
-    ],
-    "java.signatureHelp.enabled": true,
-    "java.format.enabled": true,
-    "java.format.onType.enabled": true,
-    "java.format.comments.enabled": true,
-    "java.format.settings.profile": "GoogleStyle",
-    "java.format.settings.url": "https://github.com/google/styleguide/raw/gh-pages/eclipse-java-google-style.xml",
-    //* Julia */
-    "julia.executablePath": "julia",
-    "julia.enableCrashReporter": false,
-    "julia.enableTelemetry": false,
-    "julia.usePlotPane": true,
     //* LaTeX Workshop */
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.intellisense.unimathsymbols.enabled": true,
@@ -700,18 +662,8 @@
             "## Table of Contents"
         ]
     },
-    //* Matlab */
-    "matlab.matlabpath": "/Applications/MATLAB_R2021b.app/bin/matlab",
-    "matlab.mlintpath": "/Applications/MATLAB_R2021b.app/bin/maci64/mlint",
-    "matlab.lintOnSave": true,
-    "matlab.linterEncoding": "utf8",
     //* MySQL */
     "vscode-mysql.enableTelemetry": false,
-    //* PlantUML */
-    "plantuml.jar": "/usr/local/opt/plantuml/libexec/plantuml.jar",
-    "plantuml.previewAutoUpdate": true,
-    "plantuml.render": "PlantUMLServer",
-    "plantuml.server": "https://www.plantuml.com/plantuml",
     //* PowerShell */
     "powershell.codeFolding.enable": true,
     "powershell.codeFolding.showLastLine": true,
