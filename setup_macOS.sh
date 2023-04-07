@@ -245,10 +245,10 @@ exec_cmd 'brew install coreutils ranger fd bat highlight ripgrep git-extras'
 exec_cmd 'brew install jq shfmt shellcheck diffutils colordiff diff-so-fancy'
 exec_cmd 'brew install htop openssh atool tree reattach-to-user-namespace'
 
-exec_cmd 'brew install ruby perl'
-export PATH="${HOMEBREW_PREFIX}/opt/ruby/bin${PATH:+:"${PATH}"}"
-export PATH="$(ruby -r rubygems -e 'puts Gem.dir')/bin${PATH:+:"${PATH}"}"
-export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin${PATH:+:"${PATH}"}"
+# exec_cmd 'brew install ruby perl'
+# export PATH="${HOMEBREW_PREFIX}/opt/ruby/bin${PATH:+:"${PATH}"}"
+# export PATH="$(ruby -r rubygems -e 'puts Gem.dir')/bin${PATH:+:"${PATH}"}"
+# export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin${PATH:+:"${PATH}"}"
 
 # Install casks and fonts
 exec_cmd 'brew install --cask iterm2 xquartz'
