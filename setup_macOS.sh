@@ -1,24 +1,31 @@
 #!/usr/bin/env bash
 
-# Options
+# Options False
 export SET_MIRRORS="${SET_MIRRORS:-false}"
 
-# Set PATH
+# Set PATH /opt/homebrew
 export HOMEBREW_PREFIX="/usr/local"
 if [[ "$(uname -m)" == "arm64" ]]; then
 	export HOMEBREW_PREFIX="/opt/homebrew"
 fi
 export PATH="${HOMEBREW_PREFIX}/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin${PATH:+:"${PATH}"}"
 
-# Set USER
+# Set USER jiaming
 export USER="${USER:-"$(whoami)"}"
 
 # Set configuration backup directory
+# 2023-04-08-04:16:07
 DATETIME="$(date +"%Y-%m-%d-%T")"
+# /Users/jiaming/.dotfiles/backups/2023-04-08-04:16:07
 BACKUP_DIR="${HOME}/.dotfiles/backups/${DATETIME}"
 mkdir -p "${BACKUP_DIR}/.dotfiles"
 ln -sfn "${DATETIME}" "${HOME}/.dotfiles/backups/latest"
 chmod 755 "${HOME}/.dotfiles"
+
+
+echo ${DATETIME}
+echo ${BACKUP_DIR}
+exit 0
 
 # Set temporary directory
 TMP_DIR="$(mktemp -d -t dev-setup)"
@@ -532,7 +539,7 @@ export PATH="$(ruby -r rubygems -e 'puts Gem.dir')/bin${PATH:+:"${PATH}"}"
 export PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin${PATH:+:"${PATH}"}"
 
 # Perl
-eval "$(perl -I"${HOMEBREW_PREFIX}/opt/perl/lib/perl5" -Mlocal::lib="${HOMEBREW_PREFIX}/opt/perl")"
+# eval "$(perl -I"${HOMEBREW_PREFIX}/opt/perl/lib/perl5" -Mlocal::lib="${HOMEBREW_PREFIX}/opt/perl")"
 
 # cURL
 export PATH="${HOMEBREW_PREFIX}/opt/curl/bin${PATH:+:"${PATH}"}"
@@ -551,10 +558,10 @@ export LIBRARY_PATH="${HOMEBREW_PREFIX}/opt/ncurses/lib${LIBRARY_PATH:+:"${LIBRA
 export DYLD_LIBRARY_PATH="${HOMEBREW_PREFIX}/opt/ncurses/lib${DYLD_LIBRARY_PATH:+:"${DYLD_LIBRARY_PATH}"}"
 
 # SQLite
-export PATH="${HOMEBREW_PREFIX}/opt/sqlite/bin${PATH:+:"${PATH}"}"
+# export PATH="${HOMEBREW_PREFIX}/opt/sqlite/bin${PATH:+:"${PATH}"}"
 
 # LLVM
-export PATH="${HOMEBREW_PREFIX}/opt/llvm/bin${PATH:+:"${PATH}"}"
+# export PATH="${HOMEBREW_PREFIX}/opt/llvm/bin${PATH:+:"${PATH}"}"
 
 # fzf
 if [[ -f "${HOME}/.fzf.zsh" ]]; then
