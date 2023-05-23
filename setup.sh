@@ -11,13 +11,14 @@ YELLOW="\033[33m"
 WHITE="\033[37m"
 
 # Start logging
+# ${PWD} 等价于 $(pwd)
 LOG_FILE="${PWD}/dev-setup.log"
+# 判断文件是否存在
 if [[ -f "${LOG_FILE}" ]]; then
 	mv -f "${LOG_FILE}" "${LOG_FILE}.old"
 fi
 exec 2> >(tee -a "${LOG_FILE}" >&2)
 echo -e "${BOLD}${WHITE}The script output will be logged to file ${YELLOW}\"${LOG_FILE}\"${WHITE}.${RESET}" >&2
-
 # Get system information
 OS_NAME=""
 if [[ "$(uname -s)" == "Darwin" ]]; then
@@ -33,6 +34,7 @@ elif [[ "$(uname -s)" == "Linux" ]]; then
 	fi
 fi
 
+# -z 判断字符串是否为空
 if [[ -z "${OS_NAME}" ]]; then
 	echo -e "${BOLD}${RED}The operating system is not supported yet. ${YELLOW}Only macOS, Ubuntu Linux, and Manjaro Linux are supported.${RESET}" >&2
 	exit 1
