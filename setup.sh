@@ -71,7 +71,9 @@ fi
 export SET_MIRRORS
 
 # Run script if it exists
+# 保存当前的目录
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
 if [[ -x "${SCRIPT_DIR}/setup_${OS_NAME}.sh" && "$(basename "$0")" == "setup.sh" ]]; then
 	echo -e "${BOLD}${WHITE}Run existing script ${GREEN}\"${SCRIPT_DIR}/setup_${OS_NAME}.sh\"${WHITE}.${RESET}" >&2
 	echo
