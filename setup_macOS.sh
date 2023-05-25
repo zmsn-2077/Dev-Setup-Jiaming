@@ -10,7 +10,7 @@ if [[ "$(uname -m)" == "arm64" ]]; then
 fi
 export PATH="${HOMEBREW_PREFIX}/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin${PATH:+:"${PATH}"}"
 
-# Set USER jiaming
+# Set USER,这个是不是多余
 export USER="${USER:-"$(whoami)"}"
 
 # Set configuration backup directory
@@ -18,14 +18,12 @@ export USER="${USER:-"$(whoami)"}"
 DATETIME="$(date +"%Y-%m-%d-%T")"
 # /Users/jiaming/.dotfiles/backups/2023-04-08-04:16:07
 BACKUP_DIR="${HOME}/.dotfiles/backups/${DATETIME}"
+# -p 父目录不存在自动创建
+# /Users/jiaming/.dotfiles/backups/2023-04-08-04:16:07/.dotfiles
 mkdir -p "${BACKUP_DIR}/.dotfiles"
 ln -sfn "${DATETIME}" "${HOME}/.dotfiles/backups/latest"
+# 让所有者可读可写可执行，然后同组和其他用户具有可读可执行的权限
 chmod 755 "${HOME}/.dotfiles"
-
-
-echo ${DATETIME}
-echo ${BACKUP_DIR}
-exit 0
 
 # Set temporary directory
 TMP_DIR="$(mktemp -d -t dev-setup)"
